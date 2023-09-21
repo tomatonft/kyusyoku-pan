@@ -32,6 +32,7 @@ li {
   width: calc(100% - 16px * 2);
   max-width: 800px;
   overflow: hidden;
+  /* outline: 1px solid red; */
 }
 
 section:not(.hero) {
@@ -376,6 +377,7 @@ header {
 }
 
 .bread-img {
+  width: 100%;
   margin-bottom: 40px;
   position: relative;
 }
@@ -384,9 +386,7 @@ header {
   width: 100%;
   border-radius: 50%;
   background-color: #fff;
-  /* padding: calc(50% - 20px); */
-  padding: 50%;
-  /* padding: calc(10% - 35.3475px) 0; */
+  padding: 50% 0;
 }
 
 .bread-img img {
@@ -394,14 +394,7 @@ header {
   position: absolute;
   top: calc(50% - 78.75px);
   left: calc(50% - 140px);
-  
-  /* margin: 0 auto; */
-  /* transition: transform 0.3s; */
   filter: drop-shadow(4px 8px 8px rgb(0 0 0 / 0.2));
-}
-
-.bread-img img:hover {
-  /* transform: scale(1.5); */
 }
 
 .price {
@@ -595,9 +588,14 @@ small {
   font-size: 12px;
 }
 
+/* ------------
+    レスポンシブ
+-------------- */
+
 /* medium screen */
 @media (min-width: 600px) {
 
+  /* header */
   header {
     height: 100px;
   }
@@ -632,15 +630,12 @@ small {
 
   .header-menu p {
     font-size: 16px;
-
   }
 
   .header-nav-text {
     line-height: 49px;
     transform: translateY(-2px);
   }
-
-
 
   #hamburger {
     display: none;
@@ -650,21 +645,48 @@ small {
     height: calc((var(--vh, 1vh) * 100) + 100px);
   }
 
+  /* fv */
+
   fv-info {
-    /* background-color: rgba(1, 53, 57, 0.5);
-    position: absolute; */
     bottom: 144px;
-    /* right: 24px; */
   }
 
   .fv-info p {
     font-size: 16px;
   }
+
+  /* products */
+  .product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .even {
+    flex-direction: row-reverse;
+  }
+
+  .bread-img,
+  .bread-info {
+    width: cacl((100% - 40px) / 2);
+  }
+
+  .bread-img img {
+    width: 200px;
+    top: calc(50% - 56.25px);
+    left: calc(50% - 100px);
+  }
+
 }
 
 /* large screen */
 @media (min-width: 800px) {
-  body {
-    /* background: #EA6144; */
+
+  /* product */
+  .bread-img img {
+    width: 280px;
+    top: calc(50% - 78.75px);
+    left: calc(50% - 140px);
   }
 }
