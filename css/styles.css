@@ -99,17 +99,27 @@ section:not(.hero) {
 }
 
 header {
-  height: 109px;
+  /* height: 109px; */
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(1, 53, 57, 0.5);
+  position: fixed;
+  z-index: 100;
 }
 
 .site-title {
   width: fit-content;
-  padding: 24px;
-  background-color: #fff;
+  margin-left: 24px;
+  /* padding: 24px; */
+  /* background-color: #fff; */
+  /* border-radius: 32px; */
+}
+
+#header-nav {
+  display: none;
 }
 
 /* ハンバーガーメニュー（閉じている時） */
@@ -516,4 +526,58 @@ small {
   text-align: center;
   margin-top: 32px;
   font-size: 12px;
+}
+
+/* medium screen */
+@media (min-width: 600px) {
+  #header-nav {
+    display: block;
+    margin-right: 56px;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+
+  .header-menu li + li {
+    margin-left: 24px;
+  }
+
+  .header-menu li a {
+    color: #FBF8EF;
+    display: block;
+    border: 1px solid #FBF8EF;
+    border-radius: 16px;
+    width: 84px;
+    height: 49px;
+    text-align: center;
+    transition: background-color .3s;
+  }
+
+  .header-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .header-menu p {
+    font-size: 16px;
+
+  }
+
+  .header-nav-text {
+    line-height: 49px;
+    transform: translateY(-2px);
+  }
+
+
+
+  #hamburger {
+    display: none;
+  }
+}
+
+/* large screen */
+@media (min-width: 800px) {
+  body {
+    /* background: #EA6144; */
+  }
 }
