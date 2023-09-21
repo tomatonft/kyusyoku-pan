@@ -36,7 +36,8 @@ li {
 
 section:not(.hero) {
   padding: 80px 0;
-  background: linear-gradient(to bottom, #fbf8ef 0%, #ffffff 100%);
+  background-color: #FBF8EF;
+  /* background: linear-gradient(to bottom, #fbf8ef 0%, #ffffff 100%); */
 }
 
 .section-title {
@@ -92,8 +93,9 @@ section:not(.hero) {
 -------------------------- */
 
 .fv-area {
-  background: center/cover
-    url(https://user-images.githubusercontent.com/102784267/233598576-7e0246e9-3287-419a-b3aa-f0ad3465ae4d.png);
+  /* background: center/cover
+    url(https://user-images.githubusercontent.com/102784267/233598576-7e0246e9-3287-419a-b3aa-f0ad3465ae4d.png); */
+    background: center/cover url("../img/hero-bg.jpg");
   height: calc((var(--vh, 1vh) * 100));
   width: 100%;
 }
@@ -352,15 +354,29 @@ header {
   font-size: 28px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
   margin-bottom: 40px;
 }
 
 .product-name::before,
 .product-name::after {
-  border-top: 1px solid;
+  /* border-top: 1px solid;
   content: '';
-  width: 28%;
+  width: 28%; */
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/whisk.png");
+}
+
+.product-name::before {
+  margin-right: 16px;
+}
+
+.product-name::after {
+  margin-left: 16px;
+  transform: rotate(90deg);
 }
 
 .bread-img {
