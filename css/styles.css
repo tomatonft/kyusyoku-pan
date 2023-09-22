@@ -343,7 +343,7 @@ header {
 -------------- */
 #products {
   background-color: rgba(251, 248, 239, 0.6);
-
+  padding-bottom: 0;
 }
 
 #products .container {
@@ -428,9 +428,14 @@ header {
   line-height: 2;
 }
 
+.animation-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .bread-img-animation {
   display: flex;
-  animation: moving-images 10s infinite linear;
+  animation: moving-images 20s infinite linear;
 }
 
 @keyframes moving-images {
@@ -438,7 +443,8 @@ header {
     transform: none;
   }
   to {
-    transform: translateX(-600px);
+    /* transform: translateX(-600px); */
+    transform: translateX(-1200px);
   }
 }
 
