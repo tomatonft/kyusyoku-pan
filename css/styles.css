@@ -347,7 +347,7 @@ header {
 }
 
 #products .container {
-  
+  padding-bottom: 80px;
 }
 
 .lg-bg-illust {
@@ -452,23 +452,69 @@ header {
     concept
 -------------- */
 
+#concept {
+  background-color: #FDD89D;
+  padding-bottom: 0;
+  /* padding-top: 80px;
+  border-radius: 64px; */
+}
+
+#concept .container {
+  padding-bottom: 80px;
+}
+
+
+
 .concept-img {
   margin-bottom: 56px;
 }
 
 .concept-img img {
-   width: 100%;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.speech-bubble-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.owner-portrait {
+  width: 40%;
+}
+
+.speech-bubble {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 32px;
+  padding: 16px;
+  position: relative;
+  
+}
+
+.speech-bubble::before {
+  content: '';
+  background-color: #000;
+  height: 13px;
+  width: 13px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  top: calc(50% - 6.5px);
+  left: -13px;
 }
 
 .concept-text-bold {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   line-height: 2;
 }
 
 .concept-text-normal {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   line-height: 2;
 }
 
@@ -714,9 +760,6 @@ small {
     レスポンシブ　large screen(1000)
 -------------- */
 @media (min-width: 1000px) {
-#products {
-
-}
 
 .lg-wrapper {
   width: 100%;
