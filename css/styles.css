@@ -455,15 +455,11 @@ header {
 #concept {
   background-color: #FDD89D;
   padding-bottom: 0;
-  /* padding-top: 80px;
-  border-radius: 64px; */
 }
 
 #concept .container {
   padding-bottom: 80px;
 }
-
-
 
 .concept-img {
   margin-bottom: 56px;
@@ -492,7 +488,7 @@ header {
   border-radius: 32px;
   padding: 16px;
   position: relative;
-  
+  flex: 1;
 }
 
 .speech-bubble::before {
@@ -754,6 +750,11 @@ small {
     top: calc(50% - 78.75px);
     left: calc(50% - 140px);
   }
+
+  /* concept */
+  .owner-portrait {
+    width: 30%;
+  }
 }
 
 /* ------------
@@ -761,6 +762,12 @@ small {
 -------------- */
 @media (min-width: 1000px) {
 
+  /* common */
+  section:not(.hero) {
+    padding: 104px 0;
+  }
+
+  /* products */
 .lg-wrapper {
   width: 100%;
   height: 100%;
@@ -790,6 +797,34 @@ small {
 .lg-bg-illust:nth-child(4) {
   bottom: 10%;
   right: 24px;
+}
+
+/* concept */
+#concept {
+  background-color: rgba(251, 248, 239, 0.6);
+  margin-bottom: 104px;
+}
+
+#concept .container {
+  background-color: #FDD89D;
+  border-radius: 64px;
+  padding: 104px 32px;
+}
+
+#concept .lg-wrapper {
+  padding-bottom: 104px;
+}
+
+.owner-portrait {
+  width: 20%;
+}
+
+.concept-text-bold {
+  font-size: 20px;
+}
+
+.concept-text-normal {
+  font-size: 16px;
 }
 
 
