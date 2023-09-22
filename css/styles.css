@@ -674,9 +674,9 @@ small {
     gap: 40px;
   }
 
-  .even {
-    flex-direction: row-reverse;
-  }
+ .products-list li:nth-child(even) .product-wrapper {
+   flex-direction: row-reverse;
+ }
 
   .bread-img,
   .bread-info {
