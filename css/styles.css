@@ -519,7 +519,7 @@ header {
     news
 -------------- */
 #news {
-  background: linear-gradient(to bottom, #fbf8ef 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(251, 248, 239, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
 }
 
 .news-list {
@@ -800,7 +800,6 @@ small {
 /* concept */
 #concept {
   background-color: rgba(251, 248, 239, 0.6);
-  margin-bottom: 104px;
 }
 
 #concept .container {
