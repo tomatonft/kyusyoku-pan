@@ -71,6 +71,7 @@ section:not(.hero) {
   position: relative;
   transition: all 0.3s;
   font-family: 'Kaisei Opti', serif;
+  border-radius: 32px;
 }
 
 .button .bi-arrow-right {
@@ -517,16 +518,12 @@ header {
 /* ------------
     news
 -------------- */
+#news {
+  background: linear-gradient(to bottom, #fbf8ef 0%, #ffffff 100%);
+}
+
 .news-list {
   margin-bottom: 56px;
-}
-
-.news-list li {
-  border-top: 1px solid #000;
-}
-
-.news-list li:last-child {
-  border-bottom: 1px solid #000;
 }
 
 .news-list li a {
@@ -541,6 +538,7 @@ header {
 
 .news-img img {
   width: 100%;
+  border-radius: 32px;
 }
 
 .update,
