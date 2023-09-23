@@ -563,6 +563,10 @@ header {
   }
 }
 
+.news-list-text {
+  margin-top: 8px;
+}
+
 .news-list-text p {
   font-size: 16px;
   line-height: 1.6;
@@ -824,5 +828,28 @@ small {
   font-size: 16px;
 }
 
+/* news */
+
+.news-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.news-img {
+  width: 40%;
+}
+
+.news-text {
+  flex: 1;
+}
+
+.news-text time {
+  font-size: 16px;
+}
+
+.news-list-text p {
+  font-size: 20px;
+}
 
 }
