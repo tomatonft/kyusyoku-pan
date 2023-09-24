@@ -770,6 +770,10 @@ small {
     padding: 104px 0;
   }
 
+  .section-title {
+    margin-bottom: 80px;
+  }
+
   /* products */
 .lg-wrapper {
   width: 100%;
@@ -875,6 +879,43 @@ small {
 
 .news-list-text p {
   font-size: 20px;
+}
+
+/* information */
+.info-flex {
+  display: flex;
+  gap: 40px;
+}
+
+.info-flex dl {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#information dt {
+  width: 40%;
+  padding-top: 0;
+}
+
+
+#information  dd {
+  width: 60%;
+  margin-bottom: 24px;
+}
+
+.map {
+  width: 40%;
+  padding-right: 10px;
+}
+
+.map img {
+  transition: transform .3s;
+}
+
+.map img:hover {
+  transform: rotate(4deg);
 }
 
 }
