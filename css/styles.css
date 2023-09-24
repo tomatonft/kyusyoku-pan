@@ -830,6 +830,20 @@ small {
 
 /* news */
 
+.news-list li {
+  padding-left: 10px;
+}
+
+.news-list li:hover .news-img img {
+  transform: rotate(-4deg);
+}
+
+.news-list li:hover .news-text time,
+.news-list li:hover .news-text span,
+.news-list li:hover .news-text p {
+  opacity: 0.4;
+}
+
 .news-flex {
   display: flex;
   align-items: flex-start;
@@ -840,8 +854,18 @@ small {
   width: 40%;
 }
 
+.news-img img {
+  transition: transform .3s;
+}
+
 .news-text {
   flex: 1;
+}
+
+.news-text time,
+.news-text span,
+.news-text p {
+  transition: opacity .3s;
 }
 
 .news-text time {
