@@ -575,33 +575,34 @@ header {
 /* ------------
     information
 -------------- */
-.map {
-  margin-bottom: 56px;
+
+#information {
+  background: linear-gradient(to bottom, rgba(251, 248, 239, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+#information dl {
+  margin-bottom: 48px;
 }
 
 .map img {
   width: 100%;
+  border-radius: 32px;
 }
 
 #information dt {
   padding-top: 24px;
-  border-top: 1px solid;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 #information dd {
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
   font-size: 16px;
 }
 
-#information dd:last-child {
-  border-bottom: 1px solid;
-}
-
 .google-map {
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 /* ------------
