@@ -766,6 +766,91 @@ small {
   .owner-portrait {
     width: 30%;
   }
+
+  /* news */
+  .news-list li {
+    padding-left: 10px;
+  }
+  
+  .news-list li:hover .news-img img {
+    transform: rotate(-4deg);
+  }
+  
+  .news-list li:hover .news-text time,
+  .news-list li:hover .news-text span,
+  .news-list li:hover .news-text p {
+    opacity: 0.4;
+  }
+  
+  .news-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .news-img {
+    width: 40%;
+  }
+  
+  .news-img img {
+    transition: transform .3s;
+  }
+  
+  .news-text {
+    flex: 1;
+  }
+  
+  .news-text time,
+  .news-text span,
+  .news-text p {
+    transition: opacity .3s;
+  }
+  
+  .news-text time {
+    font-size: 16px;
+  }
+  
+  .news-list-text p {
+    font-size: 20px;
+  }
+
+  /* information */
+
+  .info-flex {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .info-flex dl {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  #information dt {
+    width: 40%;
+    padding-top: 0;
+  }
+  
+  #information  dd {
+    width: 60%;
+    margin-bottom: 24px;
+  }
+  
+  .map {
+    width: 40%;
+    padding-right: 10px;
+  }
+  
+  .map img {
+    transition: transform .3s;
+  }
+  
+  .map img:hover {
+    transform: rotate(4deg);
+  }
+  
 }
 
 /* ------------
@@ -841,89 +926,6 @@ small {
   font-size: 16px;
 }
 
-/* news */
-
-.news-list li {
-  padding-left: 10px;
-}
-
-.news-list li:hover .news-img img {
-  transform: rotate(-4deg);
-}
-
-.news-list li:hover .news-text time,
-.news-list li:hover .news-text span,
-.news-list li:hover .news-text p {
-  opacity: 0.4;
-}
-
-.news-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.news-img {
-  width: 40%;
-}
-
-.news-img img {
-  transition: transform .3s;
-}
-
-.news-text {
-  flex: 1;
-}
-
-.news-text time,
-.news-text span,
-.news-text p {
-  transition: opacity .3s;
-}
-
-.news-text time {
-  font-size: 16px;
-}
-
-.news-list-text p {
-  font-size: 20px;
-}
-
-/* information */
-.info-flex {
-  display: flex;
-  gap: 40px;
-}
-
-.info-flex dl {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-#information dt {
-  width: 40%;
-  padding-top: 0;
-}
-
-#information  dd {
-  width: 60%;
-  margin-bottom: 24px;
-}
-
-.map {
-  width: 40%;
-  padding-right: 10px;
-}
-
-.map img {
-  transition: transform .3s;
-}
-
-.map img:hover {
-  transform: rotate(4deg);
-}
 
 /* footer */
 .footer-title {
