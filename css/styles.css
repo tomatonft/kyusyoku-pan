@@ -899,7 +899,6 @@ small {
   padding-top: 0;
 }
 
-
 #information  dd {
   width: 60%;
   margin-bottom: 24px;
@@ -917,5 +916,44 @@ small {
 .map img:hover {
   transform: rotate(4deg);
 }
+
+/* footer */
+.footer-title {
+  margin: 0;
+  transition: opacity .3s;
+}
+
+.footer-title:hover {
+  opacity: 0.4;
+}
+
+.footer-nav ul {
+  margin-top: 40px;
+  display: flex;
+}
+
+.footer-nav li {
+  text-align: left;
+}
+
+.footer-nav li a {
+  font-size: 16px;
+}
+
+.footer-nav li + li {
+  margin-top: 0;
+  margin-left: 24px;
+}
+
+.footer-icons {
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+small {
+  text-align: left;
+  margin-top: 40px;
+}
+
 
 }
