@@ -791,8 +791,8 @@ small {
 
 .lg-bg-illust {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   position: absolute;
   z-index: -1;
 }
