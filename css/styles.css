@@ -286,16 +286,15 @@ header {
   font-size: 24px;
   color: #000;
   font-weight: 600;
-  /* opacity: 0; */
-  opacity: 1;
+  opacity: 0;
 }
 
 .hero-text-1 {
-  /* animation: fade 3s forwards; */
+  animation: fade 3s forwards;
 }
 
 .hero-text-2 {
-  /* animation: fade 3s forwards 1s; */
+  animation: fade 3s forwards 1s;
 
 }
 
