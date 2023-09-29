@@ -100,28 +100,12 @@ section:not(.hero) {
   transform: translateY(20px);
 }
 
-/* .letter.animate.from-bottom {
-  transform: translateY(-44px);
-}
-
-.letter.animate.from-bottom.appear {
-  transform: translateY(-64px);
-}
-  */
 .animate.from-left {
  transform: translateX(-20%);
 }
 
-.animate.from-right {
+/* .animate.from-right {
   transform: translateX(20%) translateY(-32px);
-}
-
-/* .skills-web.animate.from-left.appear {
-  transform: translateX(-16px);
-}
-
-.skills-others.animate.from-right.appear {
-  transform: translateX(16px) translateY(-32px);
 } */
 
 .animate.appear {
@@ -302,15 +286,16 @@ header {
   font-size: 24px;
   color: #000;
   font-weight: 600;
-  opacity: 0;
+  /* opacity: 0; */
+  opacity: 1;
 }
 
 .hero-text-1 {
-  animation: fade 3s forwards;
+  /* animation: fade 3s forwards; */
 }
 
 .hero-text-2 {
-  animation: fade 3s forwards 2s;
+  /* animation: fade 3s forwards 1s; */
 
 }
 
