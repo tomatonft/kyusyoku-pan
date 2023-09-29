@@ -90,6 +90,45 @@ section:not(.hero) {
   right: 12px;
 }
 
+/*========= 交差監視API =========*/
+.animate {
+  opacity: 0;
+  transition: all 0.8s;
+ }
+
+ .animate.from-bottom {
+  transform: translateY(20px);
+}
+
+/* .letter.animate.from-bottom {
+  transform: translateY(-44px);
+}
+
+.letter.animate.from-bottom.appear {
+  transform: translateY(-64px);
+}
+  */
+.animate.from-left {
+ transform: translateX(-20%);
+}
+
+.animate.from-right {
+  transform: translateX(20%) translateY(-32px);
+}
+
+/* .skills-web.animate.from-left.appear {
+  transform: translateX(-16px);
+}
+
+.skills-others.animate.from-right.appear {
+  transform: translateX(16px) translateY(-32px);
+} */
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+ }
+
 /* -----------------------
     header & first view 
 -------------------------- */
