@@ -114,19 +114,10 @@ section:not(.hero) {
  }
 
 /* -----------------------
-    header & first view 
+    header
 -------------------------- */
 
-.fv-area {
-  /* background: center/cover
-    url(https://user-images.githubusercontent.com/102784267/233598576-7e0246e9-3287-419a-b3aa-f0ad3465ae4d.png); */
-    background: center/cover url("../img/hero-bg.jpg");
-  height: calc((var(--vh, 1vh) * 100));
-  width: 100%;
-}
-
 header {
-  /* height: 109px; */
   height: 80px;
   width: 100%;
   display: flex;
@@ -140,9 +131,6 @@ header {
 .site-title {
   width: fit-content;
   margin-left: 24px;
-  /* padding: 24px; */
-  /* background-color: #fff; */
-  /* border-radius: 32px; */
 }
 
 #header-nav {
@@ -265,16 +253,13 @@ header {
 -------------- */
 
 .hero {
-  height: calc((var(--vh, 1vh) * 100) + 80px);
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.hero-text {
-  /* margin-top: 56px; */
+  background: center/cover url("../img/hero-bg.jpg");
 }
 
 .hero-text p + p {
@@ -295,7 +280,6 @@ header {
 
 .hero-text-2 {
   animation: fade 3s forwards 1s;
-
 }
 
 @keyframes fade{
@@ -373,7 +357,7 @@ header {
 .fv-info {
   background-color: rgba(1, 53, 57, 0.5);
   position: absolute;
-  bottom: 104px;
+  bottom: 24px;
   right: 24px;
 }
 
@@ -751,10 +735,6 @@ small {
 
   #hamburger {
     display: none;
-  }
-
-  .hero {
-    height: calc((var(--vh, 1vh) * 100) + 100px);
   }
 
   /* fv */
