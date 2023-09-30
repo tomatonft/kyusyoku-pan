@@ -365,6 +365,61 @@ header {
   color: #FBF8EF;
 }
 
+.scroll-bar {
+  position: fixed;
+  right: 8px;
+  bottom: 0;
+}
+
+.scroll {
+  display: block;
+  color: #fff;
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateY(-190px) rotate(90deg);
+  opacity: 1;
+  transition: all .3s;
+}
+
+.scroll.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll::after {
+  content:'';
+  position: absolute;
+  width: 88px;
+  height: 2px;
+  background-color: #fff;
+  top: calc(50% - 1px);
+  left: 54px;
+  opacity: 0;
+  animation: scroll 2s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  from {
+    width: 0;
+    opacity: 0;
+    left: 54px;
+  }
+
+  30% {
+    width: 88px;
+    opacity: 1;
+    left: 54px;
+  }
+
+  to {
+    width: 0;
+    opacity: 0;
+    left: 142px;
+  }
+}
+
 /* ------------
     products
 -------------- */

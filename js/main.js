@@ -53,4 +53,20 @@
   targets.forEach(target => {
     observer.observe(target);
   });
+
+// -----------
+//  scroll-bar をスクロール量500で非表示にする
+// -----------
+const scrollBar = document.querySelector('span.scroll');
+
+window.addEventListener('scroll', () => {
+  const currentPos = window.pageYOffset // スクロール量を取得
+
+  if (currentPos > 500) {
+    scrollBar.classList.add('hidden');
+  } else {
+    scrollBar.classList.remove('hidden');
+  }
+});
+  
 }
