@@ -101,10 +101,6 @@ section:not(.hero) {
  transform: translateX(-20%);
 }
 
-/* .animate.from-right {
-  transform: translateX(20%) translateY(-32px);
-} */
-
 .animate.appear {
   opacity: 1;
   transform: none;
@@ -491,11 +487,9 @@ header {
 .price {
   font-size: 28px;
   font-weight: bold;
-  /* margin-bottom: 24px; */
   position: absolute;
   bottom: 24px;
   left: calc(50% - 50px);
-
 }
 
 .price span {
@@ -584,7 +578,6 @@ header {
 .concept-text-bold {
   font-size: 18px;
   font-weight: bold;
-  /* margin-bottom: 24px; */
   line-height: 2;
 }
 
@@ -688,7 +681,6 @@ header {
 }
 
 #information dd {
-  /* padding-bottom: 24px; */
   font-size: 16px;
 }
 
@@ -834,7 +826,6 @@ small {
     top: calc(50% - 56.25px);
     left: calc(50% - 100px);
   }
-
 }
 
 /* ------------
@@ -947,7 +938,6 @@ small {
   .map img:hover {
     transform: rotate(4deg);
   }
-  
 }
 
 /* ------------
@@ -1061,6 +1051,4 @@ small {
   text-align: left;
   margin-top: 40px;
 }
-
-
 }
